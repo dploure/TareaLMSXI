@@ -1,0 +1,171 @@
+<!DOCTYPE html />
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+        <link rel="stylesheet" href="estilosreserva.css">
+        <title>Reservar habitacion de hotel</title>
+    </head>
+    <body>
+        <header>
+            <h1>REGISTRO DE RESERVAS DE HABITACION</h1>
+            <h2>Cubra los datos necesáreos en cada sección para hacer la reserva</h2>
+        </header>
+        <form action="get">
+            <div class="contenedor">
+                <div class="enmarcadoizquierda">
+                    <section class="datoscliente">
+                        <span>
+                        <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" />
+                        </span>
+                        <span>
+                            <label for="apellidos">Apellidos:</label>
+                                <input type="text" id="apellidos" />
+                        </span>
+                        <span>
+                            <label for="telefono">Teléfono de contacto:</label>
+                                <input type="tel" id="telefono" />
+                        </span>
+                        <span>
+                            <label for="correo">Correo electrónico:</label>
+                                <input type="email" id="correo">
+                        </span>
+                        <span>
+                            <label for="noches">Número de noches:</label>
+                                <input type="number" id="noches">
+                        </span>
+                    </section>
+                </div>
+                <section class="enmarcadoderecha">
+                    <label for="dia">Dia de entrada: </label>
+                        <select name="diaentrada" id="dia">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                         <br />
+                         <label for="mes">Mes de entrada: </label>
+                            <select name="mesentrada" id="mes">
+                                <option value="Enero">Enero</option>
+                                <option value="Febrero">Febrero</option>
+                                <option value="Marzo">Marzo</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Mayo">Mayo</option>
+                                <option value="Junio">Junio</option>
+                                <option value="Julio">Julio</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Septiembre">Septiembre</option>
+                                <option value="Octubre">Octubre</option>
+                                <option value="Noviembre">Noviembre</option>
+                                <option value="Diciembre">Diciembre</option>
+                            </select>
+                </section>
+            </div>
+            <div class="contenedor">
+                <section class="enmarcadocentral">
+                    <table class="centrado">
+                        <tr>
+                            <td>
+                                <input type="radio" id="simple" value="simple" name="tipohabitacion">
+                                <label for="simple">Habitación simple</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="doble" value="doble" name="tipohabitacion">
+                                <label for="doble">Habitación doble</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="matrimonio" value="matrimonio" name="tipohabitacion">
+                                <label for="matrimonio">Habitación de matrimonio</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="simple">
+                                    <img src="simple.png" width="150px" alt="Habitación simple">
+                                </label>
+                            </td>
+                            <td>
+                                <label for="doble">
+                                    <img class="imagen" src="doble.png" width="150px" alt="Habitación doble">
+                                </label>
+                            </td>
+                            <td>
+                                <label for="matrimonio">
+                                    <img class="imagen" src="matrimonio.png" width="150px" alt="Habitacion matrimonio">
+                                </label>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            <div class="contenedor">
+                <section class="mitadizquierda">
+                    <span>Marque los complelentos que desee</span>
+                    <span>
+                        <input type="checkbox" name="desayuno" id="desayuno" />
+                        <label for="desayuno">Desayuno</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="comida" id="comida" />
+                        <label for="comida">Comida</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="cena" id="cena" />
+                        <label for="cena">Cena</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" name="supletoria" id="supletoria" />
+                        <label for="supletoria">Cama supletoria</label>
+                    </span>
+                </section>
+                <section class="mitadderecha">
+                    <span>COMENTARIOS:</span>
+                    <span>
+                        <textarea name="comentarios" cols="50" rows="10" placeholder="Escribanos aquí cualquir particularidad que desee que tengamos en cuenta durante su estancia, intentaremos cumplirlo en la medida de lo posible."></textarea>
+                    </span>
+                </section>
+            </div>
+            <div class="contenedor">
+                <section class="cajapequeña">
+                    <button type="reset">Restablecer el formulario</button>
+                    <button type="submit">Enviar solicitud de reserva</button>
+                </section>
+            </div>
+            <div class="contenedor">
+                <section class="cajapequeña">
+                    <a href="index.htm">Volver a la página principal</a>
+                </section>
+            </div>
+
+        </form>
+
+    </body>
+</html>

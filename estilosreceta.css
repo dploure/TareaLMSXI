@@ -11,6 +11,7 @@ body{
     background-color: rgb(236, 209, 175);
     border-radius: 30px;
     flex-direction: column;
+    padding-bottom: 80px;
 }
 div.titular{ 
     margin: 80px 0px;   
@@ -49,4 +50,7 @@ ul, ol{
 }
 .imagen{
     padding: 0px 0px 100px 0px;
+}
+a{
+    color:rgb(116, 57, 2);
 }
